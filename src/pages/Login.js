@@ -7,6 +7,7 @@ import { setUser, clearUser } from '../store/actions/user'
 function Login(props) {
 
   const master_a = 'master_a';
+  const local_b = 'local_b';
 
   const [mobile, setMobile] = useState('');
 
@@ -21,6 +22,7 @@ function Login(props) {
   return (
     <div className="box">
       <p> {master_a} </p>
+      <p> {local_b} </p>
       <input placeholder="Basic usage" value={mobile} onChange={(e) => setMobile(e.target.value)} />
       <Button type="primary" onClick={ tapClick }>login</Button>
       <Button type="primary" onClick={ tapSignOut }>sign out</Button>
